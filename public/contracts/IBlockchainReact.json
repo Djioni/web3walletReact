@@ -1,0 +1,312 @@
+{
+  "contractName": "IBlockchainReact",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "addFunds",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "withdrawAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"addFunds\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"withdrawAmount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IBlockchain_react.sol\":\"IBlockchainReact\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IBlockchain_react.sol\":{\"keccak256\":\"0xfce35e4a99524a6608adfcc06f01728c061361ccbb1f5db694f7a730723557e5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://287c1c01934affc694fde51f3e8b63fc27151939b529aaa649eab312ad33fd6d\",\"dweb:/ipfs/QmYsxn2XkVKghH2nPYCnZPQoYxshs169ngy7w6xAgtw43P\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n// they cannot inherit from other smart contracts\n// they can only inherit from other interfaces\n\n// They cannot declare a constructor\n// They cannot declare state variables\n// all declared functions have to be external\n\ninterface IBlockchainReact {\n  function addFunds() external payable;\n  function withdraw(uint withdrawAmount) external;\n}\n",
+  "sourcePath": "/Users/djioni/react-smartcontract/blockchain_react/contracts/IBlockchain_react.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IBlockchain_react.sol",
+    "exportedSymbols": {
+      "IBlockchainReact": [
+        177
+      ]
+    },
+    "id": 178,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 168,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBlockchainReact",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 177,
+        "linearizedBaseContracts": [
+          177
+        ],
+        "name": "IBlockchainReact",
+        "nameLocation": "297:16:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a26759cb",
+            "id": 171,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addFunds",
+            "nameLocation": "327:8:1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 169,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "335:2:1"
+            },
+            "returnParameters": {
+              "id": 170,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:0:1"
+            },
+            "scope": 177,
+            "src": "318:37:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2e1a7d4d",
+            "id": 176,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "367:8:1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 174,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 173,
+                  "mutability": "mutable",
+                  "name": "withdrawAmount",
+                  "nameLocation": "381:14:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 176,
+                  "src": "376:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 172,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:21:1"
+            },
+            "returnParameters": {
+              "id": 175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "405:0:1"
+            },
+            "scope": 177,
+            "src": "358:48:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 178,
+        "src": "287:121:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:377:1"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/IBlockchain_react.sol",
+    "exportedSymbols": {
+      "IBlockchainReact": [
+        177
+      ]
+    },
+    "id": 178,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 168,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBlockchainReact",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 177,
+        "linearizedBaseContracts": [
+          177
+        ],
+        "name": "IBlockchainReact",
+        "nameLocation": "297:16:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a26759cb",
+            "id": 171,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addFunds",
+            "nameLocation": "327:8:1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 169,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "335:2:1"
+            },
+            "returnParameters": {
+              "id": 170,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:0:1"
+            },
+            "scope": 177,
+            "src": "318:37:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2e1a7d4d",
+            "id": 176,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "367:8:1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 174,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 173,
+                  "mutability": "mutable",
+                  "name": "withdrawAmount",
+                  "nameLocation": "381:14:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 176,
+                  "src": "376:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 172,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:21:1"
+            },
+            "returnParameters": {
+              "id": 175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "405:0:1"
+            },
+            "scope": 177,
+            "src": "358:48:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 178,
+        "src": "287:121:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:377:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-20T15:00:32.383Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
